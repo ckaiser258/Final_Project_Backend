@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  test_name: MyString
+  result: MyString
+  date: MyString
+  athlete: one
+  team: one
+
+two:
+  test_name: MyString
+  result: MyString
+  date: MyString
+  athlete: two
+  team: two

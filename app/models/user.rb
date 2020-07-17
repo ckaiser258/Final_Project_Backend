@@ -1,6 +1,9 @@
 class User < ApplicationRecord
     has_secure_password
 
+    has_many :teams
+    has_many :athletes, through: :teams
+
     validates :first_name, :last_name, :email, :username, :password, presence: { message: "must be given" }
 
     validates :first_name, length: { minimum: 2 }

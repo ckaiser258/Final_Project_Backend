@@ -18,7 +18,7 @@ before_action :authorized
 
     def decoded_token
         begin
-            JWT.decode(token, `#{JWT_SECRET_KEY}`, true, {:algorithm => 'HS256'})
+            JWT.decode(token, 'a92887b2c3540ac08d78d6b8680e485e1308332ed10e4e09f265a0dd66eb6f48', true, {:algorithm => 'HS256'})
         rescue JWT::DecodeError
             [{error: "Invalid Token"}]
         end
