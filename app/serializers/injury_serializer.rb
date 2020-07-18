@@ -1,5 +1,6 @@
 class InjurySerializer < ActiveModel::Serializer
-  attributes :site, :description, :severity, :date
   has_one :athlete
   has_one :team
+
+  attributes :site, :description, :severity, :date, :athlete_id, :team_id
 end

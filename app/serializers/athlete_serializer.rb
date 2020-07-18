@@ -3,5 +3,5 @@ class AthleteSerializer < ActiveModel::Serializer
   has_many :injuries
   has_one :team
   has_one :user
-  attributes :first_name, :last_name, :year, :image
+  attributes :id, :first_name, :last_name, :year, :image, :user_id, :team_id
 end
