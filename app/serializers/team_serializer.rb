@@ -3,5 +3,5 @@ class TeamSerializer < ActiveModel::Serializer
   has_one :user
   has_many :athletes
   has_many :injuries
-  # has_many :stats
+  has_many :stats
 end
