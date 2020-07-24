@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_21_225237) do
+ActiveRecord::Schema.define(version: 2020_07_24_203100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,24 +31,24 @@ ActiveRecord::Schema.define(version: 2020_07_21_225237) do
   create_table "injuries", force: :cascade do |t|
     t.string "site"
     t.string "description"
-    t.string "date"
     t.bigint "athlete_id", null: false
     t.bigint "team_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "severity"
+    t.date "date"
     t.index ["athlete_id"], name: "index_injuries_on_athlete_id"
     t.index ["team_id"], name: "index_injuries_on_team_id"
   end
 
   create_table "stats", force: :cascade do |t|
     t.string "test_name"
-    t.string "date"
     t.bigint "athlete_id", null: false
     t.bigint "team_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "result"
+    t.date "date"
     t.index ["athlete_id"], name: "index_stats_on_athlete_id"
     t.index ["team_id"], name: "index_stats_on_team_id"
   end
