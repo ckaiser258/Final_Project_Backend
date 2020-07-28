@@ -5,6 +5,11 @@ class Api::V1::UsersController < ApplicationController
         render json: {user: UserSerializer.new(current_user)}, status: :accepted
     end
 
+    def show
+        user = User.find(params[:id])
+        render json: {user: UserSerializer.new(user)}
+      end    
+
     def create
         @user = User.create(user_params)
         if @user.valid?
@@ -14,6 +19,16 @@ class Api::V1::UsersController < ApplicationController
             render json: {error: @user.errors.full_messages}, status: :not_acceptable
         end
     end
+
+    def update
+        user = User.find(params[:id])
+        user.update(user_params)
+        if user.valid?
+          render json: {user: UserSerializer.new(user)}
+        else
+          render json: {errors: user.errors.full_messages}
+        end
+      end
 
     private 
     
