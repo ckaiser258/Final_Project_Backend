@@ -31,6 +31,8 @@ class Api::V1::AthletesController < ApplicationController
 
   def destroy
     athlete = Athlete.find(params[:id])
+    athlete.injuries.destroy_all
+    athlete.stats.destroy_all
     athlete.destroy
     render json: {message: "Athlete Deleted"}, status: :ok
   end
