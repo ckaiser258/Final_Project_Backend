@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       resources :stats
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
+      root "application#index"
+      
     end
   end
 end
