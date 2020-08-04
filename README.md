@@ -1,5 +1,5 @@
 ### Flatiron School: Seattle 0420 Cohort
-# MovieShelf: Module 4 Project
+# Performance Mapper: Final Project
 
 ### Description: 
 This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries. As well as visualizing key trends in data across their teams and athletes. Key features are as follows:
