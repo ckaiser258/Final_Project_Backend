@@ -2,7 +2,43 @@
 # Performance Mapper: Final Project
 
 ### Description: 
-This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries. As well as visualizing key trends in data across their teams and athletes. Key features are as follows:
+This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries, as well as visualize key trends in data across their teams and athletes. Key features are as follows:
+
+* User Login and Homepage with horizontal bar chart of cumulative injuries across teams.
+
+![Login and Home Page](README_assets/login_and_home_page.gif)
+
+* User can view and add/delete their teams. Broken images get fixed with an automatic default image.
+
+![View and Add Teams](README_assets/view_and_add_teams_with_default_image.gif)
+
+* View average stats and trends of performance measures, sorted by date and separated by test in individual tabs.
+
+![Team Performance Stats](README_assets/view_team_performance_stats.gif)
+
+* View injuries across the team, data presented by site of each injury. Can click for a more detailed view of injuries (dates, descriptions, severities, etc.).
+
+![Team Injuries](README_assets/view_team_injuries.gif)
+
+* View athletes across the team, and add/delete athletes.Broken images get fixed with an automatic default image.
+
+![View and Add Athletes on a Team](README_assets/view_and_add_team_athletes.gif)
+
+* View performance statistics and trends for a specific athlete, sorted by date. Tabs for tests are dynamically added as the user adds new tests.
+
+![View Athlete Stats](README_assets/view_athlete_stats.gif)
+
+* View injuries for a specific athlete. Data presented by site of each injury. Can click for a more detailed view of injuries (dates, descriptions, severities, etc.). 
+
+![View Athlete Injuries](README_assets/view_athlete_injuries.gif)
+
+* Add and delete performance statistics. Graph will dynamically update as stats are added/deleted. Each stat/test is automatically added or removed from the team averages.
+
+![Add and Delete Stats](README_assets/add_and_delete_stats.gif)
+
+* Add and delete injuries. Graph will dynamically update as injuries are added/deleted. Each injury is automatically added or removed from the team and home charts.
+
+![Add and Delete Injuries](README_assets/add_and_delete_injuries.gif)
 
 
 The backend of the application leverages Ruby on Rails API functionality to receive and send AJAX requests in a JSON formate. The interactive frontend is build on ReactJS, HTML, and CSS.
