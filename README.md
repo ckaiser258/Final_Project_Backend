@@ -2,7 +2,7 @@
 # Performance Mapper: Final Project
 
 ### Description: 
-This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries, as well as visualize key trends in data across their teams and athletes. Key features are as follows:
+This is the backend repo for Performance Mapper and is necessary to run the application locally. This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries, as well as visualize key trends in data across their teams and athletes. Key features are as follows:
 
 * User Login and Homepage with horizontal bar chart of cumulative injuries across teams.
 
