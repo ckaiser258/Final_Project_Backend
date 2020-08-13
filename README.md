@@ -2,7 +2,7 @@
 # Performance Mapper: Final Project
 
 ### Description: 
-This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries, as well as visualize key trends in data across their teams and athletes. Key features are as follows:
+This is the backend repo for Performance Mapper. This project was designed to enable strength and conditioning coaches to to record, monitor, and track their teams'/athletes' performance statistics and injuries, as well as visualize key trends in data across their teams and athletes. Key features are as follows:
 
 * User Login and Homepage with horizontal bar chart of cumulative injuries across teams.
 
@@ -12,7 +12,7 @@ This project was designed to enable strength and conditioning coaches to to reco
 
 ![View and Add Teams](README_assets/view_and_add_teams_with_default_image.gif)
 
-* View average stats and trends of performance measures, sorted by date and separated by test in individual tabs.
+* View average stats and trends of performance measures across a team, sorted by date and separated by test in individual tabs.
 
 ![Team Performance Stats](README_assets/view_team_performance_stats.gif)
 
@@ -51,16 +51,28 @@ The backend of the application leverages Ruby on Rails API functionality to rece
 * PostgreSQL (12.3)
 
 ### Front End Dependencies
-Refer to the frontend repo at https://github.com/ckaiser258/Final_Project_Frontend for instructions to set up the front-end interface and ReactJS.
+The frontend (and backend) of this app is hosted, so, like this repo, the frontend repo is not necessary for use. However, if you'd like to run the server locally, refer to the frontend repo at https://github.com/ckaiser258/Final_Project_Frontend for instructions to set up the front-end interface and ReactJS.
 
 ### Installation:
 
-Download this entire git repository to your computer and place in your desired install directory. If you don't have the above dependencies, in your terminal run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to install Homebrew, then run `brew install rbenv ruby-build` to install Ruby, then `rbenv install 2.7.1` `rbenv global 2.7.1` and `ruby -v` to confirm. Finally, to install Rails, run `gem install rails -v 6.0.2.2` `rbenv rehash` and `rails -v` to confirm. If you need to install PostgreSQL, follow their instructions here: https://postgresapp.com/.
-
-Via a terminal interface navigate to where you installed this repository. From this location execute ```bundle install``` to install all other required gem packages. 
+1. Download this entire git repository to your computer and place in your desired install directory. 
+2. If you don't have the above dependencies: 
+   * In your terminal run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to install Homebrew 
+   * Then run `brew install rbenv ruby-build` to install Ruby, then `rbenv install 2.7.1` `rbenv global 2.7.1` and `ruby -v` to confirm. 
+   * Finally, to install Rails, run `gem install rails -v 6.0.2.2` `rbenv rehash` and `rails -v` to confirm. 
+   * If you need to install PostgreSQL, follow their instructions here: https://postgresapp.com/.
+3. Via a terminal interface navigate to where you installed this repository. From this location execute ```bundle install``` to install all other required gem packages. 
 
 ### Running:
-This project was designed as a proof of concept so it requires hosting locally. To start hosting the local server, start by opening PostgreSQL and starting the server. Then, in your terminal navigate to the directory you've installed this repo in. Once there, execute `rails db:create`, `rails db:migrate`,`rails db:seed`, and finally ```rails s```. The rails server is functioning solely as a backend API for local development, so you do not need to navigate to localhost:3000 in your browser unless you'd like to test to make sure the database is running correctly. It's recommended to run the backend on port 3000 then the front end on a different port (React will prompt you to do this).
+
+This app is hosted at https://performancemapper.herokuapp.com/. However, if you'd like to run the app locally, you can follow the instructions below (given you've installed the frontend repo as noted above.):
+
+1. To start hosting the local server, start by opening PostgreSQL and starting the server. 
+2. In your terminal navigate to the directory you've installed this repo in. 
+3. Once there, execute `rails db:create`, `rails db:migrate`,`rails db:seed`, and finally ```rails s```. 
+4. The rails server is functioning solely as a backend API for local development, so you do not need to navigate to localhost:3000 in your browser unless you'd like to test to make sure the database is running correctly. 
+
+Note: It's recommended to run the backend on port 3000 then the front end on a different port (React will prompt you to do this).
 
 ### License
 Copyright 2020 Colton Kaiser
