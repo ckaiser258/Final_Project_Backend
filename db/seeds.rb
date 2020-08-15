@@ -86,7 +86,6 @@ end
 
 1.times do #Sample athlete
     Athlete.create!(
-        id: 1,
         first_name: Faker::Name.first_name, 
         last_name: Faker::Name.last_name, 
         year: years.sample,
