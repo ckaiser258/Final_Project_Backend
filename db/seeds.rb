@@ -26,20 +26,18 @@ tests = ["10yd Sprint", "Vertical Jump", "Broad Jump", "Kneeling Medicine Ball T
 body_parts = ["Back", "Knee", "Elbow", "Hip", "Ankle", "Foot"]
 
 
-# user_seeds.times do
-#     User.create!(
-#         id: 1,
-#         first_name: "Colton", 
-#         last_name: "Kaiser", 
-#         username: "cdkaiser",
-#         email: "kaiserc2@seattleu.edu",
-#         password: "12345"
-#     )
-# end
+user_seeds.times do
+    User.create!(
+        first_name: "Colton", 
+        last_name: "Kaiser", 
+        username: "cdkaiser",
+        email: "kaiserc2@seattleu.edu",
+        password: "12345"
+    )
+end
 
 team_seeds.times do
     Team.create!(
-        id: 1,
         name: "Soccer", 
         logo: "https://whoopdirt.com/wp-content/uploads/2020/06/SeattleUniversity_Logo_Hero_870_602_c1.png",
         user_id: 1
@@ -48,7 +46,6 @@ end
 
 team_seeds.times do
     Team.create!(
-        id: 2,
         name: Faker::Team.sport.capitalize, 
         logo: "https://whoopdirt.com/wp-content/uploads/2020/06/SeattleUniversity_Logo_Hero_870_602_c1.png",
         user_id: 1
@@ -57,7 +54,6 @@ end
 
 team_seeds.times do
     Team.create!(
-        id: 3,
         name: Faker::Team.sport.capitalize, 
         logo: "https://whoopdirt.com/wp-content/uploads/2020/06/SeattleUniversity_Logo_Hero_870_602_c1.png",
         user_id: 1
@@ -66,7 +62,6 @@ end
 
 team_seeds.times do
     Team.create!(
-        id: 4,
         name: Faker::Team.sport.capitalize, 
         logo: "https://whoopdirt.com/wp-content/uploads/2020/06/SeattleUniversity_Logo_Hero_870_602_c1.png",
         user_id: 1
@@ -75,7 +70,6 @@ end
 
 team_seeds.times do
     Team.create!(
-        id: 5,
         name: Faker::Team.sport.capitalize, 
         logo: "https://whoopdirt.com/wp-content/uploads/2020/06/SeattleUniversity_Logo_Hero_870_602_c1.png",
         user_id: 1
@@ -84,7 +78,6 @@ end
 
 team_seeds.times do
     Team.create!(
-        id: 6,
         name: Faker::Team.sport.capitalize, 
         logo: "https://whoopdirt.com/wp-content/uploads/2020/06/SeattleUniversity_Logo_Hero_870_602_c1.png",
         user_id: 1
