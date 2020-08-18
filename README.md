@@ -65,7 +65,7 @@ The frontend (and backend) of this app is hosted, so, like this repo, the fronte
 
 ### Running:
 
-This app is hosted at https://performancemapper.herokuapp.com/. However, if you'd like to run the app locally, you can follow the instructions below (given you've installed the frontend repo as noted above.):
+This app is hosted at https://performancemapper.netlify.app/. However, if you'd like to run the app locally, you can follow the instructions below (given you've installed the frontend repo as noted above.):
 
 1. To start hosting the local server, start by opening PostgreSQL and starting the server. 
 2. In your terminal navigate to the directory you've installed this repo in. 
